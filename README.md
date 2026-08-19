@@ -9,3 +9,8 @@ This repository was created to organize the class assingments of the Course with
 
 ## How to Use
 - The content is organized in classes (aula). Please identify the respective class number and check it's corresponding subdirectory.
+
+
+## Content of each class
+- aula2: non-semantic html
+- aula3: semantic html
