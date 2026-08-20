@@ -12,5 +12,5 @@ This repository was created to organize the class assingments of the Course with
 
 
 ## Content of each class
-- aula2: non-semantic html
-- aula3: semantic html
+- aula2: non-semantic and semantic html
+- aula3: forms
