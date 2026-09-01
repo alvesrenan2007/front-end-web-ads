@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!-- This document contains aula4's assingment -->
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Produto</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <img src="" alt="">
+    <h1>Cadastro de Produto</h1>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <h2></h2>
+    <form action="https://postman-echo.com/post" class="indented-block" method="POST" enctype="multipart/form-data">
+      <p>Preencha o formulário para cadastrar seu produto</p>
+      <fieldset>
+        <legend>Dados Cadastrais</legend>
+
+        <div>
+          <label for="name_id">Nome: </label>
+          <input id="name_id" name="name" type="text" placeholder="Nome ou descrição curta." />
+        </div>
+
+        <div>
+          <label for="sku_code_id">Código SKU: </label>
+          <input id="sku_code_id" name="sku_code" type="text" placeholder="XY0000" />
+        </div>
+
+        <div>
+          <label for="quantity_id">Quantidade em Estoque: </label>
+          <input id="quantity_id" name="quantity" type="text" placeholder="0" />
+        </div>
+
+        <div>
+          <label for="description_id">Descrição: </label>
+          <textarea type="text" id="description_id" name="description"
+            placeholder="Descrição longa do produto"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Dados Físicos</legend>
+        <div>
+          <label for="weight_id">Peso (kg)</label>
+          <input type="text" id="weight_id" name="weight" placeholder="0.0" />
+        </div>
+        <div>
+          <label for="size_y_id">Altura (cm): </label>
+          <input type="text" id="size_y_id" name="size_y" placeholder="0.0" />
+        </div>
+        <div>
+          <label for="size_x_id">Largura (cm): </label>
+          <input type="text" id="size_x_id" name="size_x" placeholder="0.0" />
+        </div>
+        <div>
+          <label for="size_z_id">Comprimento (cm): </label>
+          <input type="text" id="size_z_id" name="size_z" placeholder="0.0" />
+        </div>
+      </fieldset>
+      <button type="submit">Cadastrar</button>
+    </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="">
+      <p></p>
+    </footer>
+</body>

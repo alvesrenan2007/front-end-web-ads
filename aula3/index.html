@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!-- This document contains aula4's assingment -->
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Recrutamento Online</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <img src="" alt="">
+    <h1>Recrutamento Online</h1>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <section id="">
+      <h2>Cadastre seu currículo</h2>
+      <form action="https://postman-echo.com/post" class="indented-block" method="POST" enctype="multipart/form-data">
+        <p>Preencha o formulário para se candidatar à vaga</p>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+          <div>
+            <label>Foto: </label>
+            <input type="file" id="foto_id" name="foto" accept="image/*" />
+          </div>
+          <div>
+            <label for="nome_id">Nome Completo: </label>
+            <input id="nome_id" name="nome" type="text" />
+          </div>
+
+          <div>
+            <label for="telefone_id">Telefone: </label>
+            <input id="telefone_id" name="telefone" type="text" />
+          </div>
+
+          <div>
+            <label for="email_id">E-mail: </label>
+            <input id="email_id" name="email" type="text" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Endereço</legend>
+          <div>
+            <label>CEP</label>
+            <input type="text" id="address_cep_id" name="address_cep" placeholder="Insira seu CEP" />
+          </div>
+          <div>
+            <label for="street_id">Rua: </label>
+            <input type="text" id="address_street_id" name="street" />
+          </div>
+          <div>
+            <label for="">Número: </label>
+            <input type="text" id="address_number_id" name="address_number" />
+          </div>
+          <div>
+            <label for="">Bairro: </label>
+            <input type="text" id="address_neighborhood_id" name="address_neighborhood" />
+          </div>
+          <div>
+            <label for="">Cidade: </label>
+            <input type="text" id="address_city_id" name="address_city" />
+          </div>
+          <div>
+            <label for="">Estado: </label>
+            <input text" id="address_state_id" name="address_state" />
+          </div>
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="">
+      <p></p>
+    </footer>
+</body>
