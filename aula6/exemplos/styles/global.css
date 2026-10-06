@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  color: #151515;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  opacity: 0.8;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+section {
+  background-color: #e5e5e5;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dcdcdc;
+  text-align:center;
+}
+
+footer {
+  text-align: center;
+}
+
+.item {
+  color: #ffffff;
+  background-color: #0000ff;
+}
+
+.container-block .item {
+  display: block;
+  height: 1.5rem;
+  margin: 0.5rem;
+}
+
+.container-inline .item {
+  display: inline;
+}
+
+.container-inline-block .item {
+  display: inline-block;
+  padding: 0.5rem;
+  width: 5rem;
+}
+
+.container-flex{
+  display: flex;
+  flex-direction: row;
+  background-color: aquamarine;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.container-flex .item{
+  padding: 0.5rem;
+  flex-basis: 100px;
+  flex-shrink: 0.5;
+  flex-grow: 1;
+}
+
+#item-2{
+  flex-grow: 2;
+}
+
+#item-3{
+  flex-grow: 3;
+}
+
+.container-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* same as "1fr 1fr 1fr"*/
+  /* grid-template-rows: 1fr 2fr 3fr; */
+  /* grid-template-rows: minmax(100px, auto) ; */
+  grid-auto-rows: minmax(50px, auto);
+  gap: 0.5rem;
+  background-color: aqua;
+  /* border: 3px solid salmon; */
+}
+
+.container-grid .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-grid-area{
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main article"
+    "footer footer";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 4fr 0.5fr;
+  height: 20rem;
+  gap: 0.5rem;
+}
+
+.container-grid-area div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-grid-area .item-header{
+  grid-area: header;
+  background-color: lightskyblue;
+}
+
+.container-grid-area .item-main{
+  grid-area: main;
+}
+
+.container-grid-area .item-article{
+  grid-area: article;
+}
+
+.container-grid-area .item-footer{
+  grid-area: footer;
+}
