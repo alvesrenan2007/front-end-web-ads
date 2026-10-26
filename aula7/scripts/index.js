@@ -1,7 +1,10 @@
 function executar(event){
   event.preventDefault(); // prevents the button from submitting the form
   clearForm();
+  validateForm();
+} // end of executar
 
+function validateForm(){
   const name = document.querySelector("#nome").value;
   const errName = document.querySelector("#erro-nome");
 
@@ -40,17 +43,29 @@ function executar(event){
 
   const terms = document.querySelector("#termos");
   const errTerms = document.querySelector("#erro-termos");
-  if(terms.checked === false){
+  if(!terms.checked){
     errTerms.textContent = "É preciso aceitar os termos";
     errTerms.classList.add("erro");
     errTerms.classList.remove("oculto");
   }
 
-} // end of executar
+  const concluido = document.querySelector("#concluido");
+  const isFormValid = document.querySelectorAll(".erro").length === 0;
+  if(!isFormValid){
+    concluido.textContent = "É preciso aceitar os termos";
+    concluido.classList.add("erro");
+    concluido.classList.remove("oculto");
+  } else {
+    concluido.textContent = "Cadastro concluído com sucesso!";
+    concluido.classList.add("sucesso");
+    concluido.classList.remove("oculto");
+  }
+} // end of validateForm()
 
 function clearForm(){
   document.querySelectorAll(".erro").forEach( (element) => {
     element.classList.remove("erro");
     element.classList.add("oculto");
   });
-}
+  document.querySelector("#concluido").classList.add("oculto");
+} // end of clearForm()
