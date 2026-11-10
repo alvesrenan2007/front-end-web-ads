@@ -16,3 +16,7 @@ This repository was created to organize the class assingments of the Course with
 - aula3: forms (I was not present on this lesson)
 - aula4: http requests with postman
 - aula5: css
+- aula6: displays
+- aula7: JavaScript
+- aula8: API Calls
+- aula9: media queries and web storage
